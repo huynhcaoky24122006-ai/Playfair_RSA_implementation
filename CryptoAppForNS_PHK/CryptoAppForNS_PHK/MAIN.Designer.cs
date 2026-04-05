@@ -58,7 +58,7 @@
             // btn_Quit
             // 
             this.btn_Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quit.Location = new System.Drawing.Point(312, 395);
+            this.btn_Quit.Location = new System.Drawing.Point(307, 379);
             this.btn_Quit.Name = "btn_Quit";
             this.btn_Quit.Size = new System.Drawing.Size(299, 49);
             this.btn_Quit.TabIndex = 3;
