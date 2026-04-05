@@ -31,9 +31,7 @@
             this.panelMatrix = new System.Windows.Forms.Panel();
             this.btn_BackMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // labelTitle
-            // 
+            
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(260, 20);
@@ -41,25 +39,19 @@
             this.labelTitle.Size = new System.Drawing.Size(244, 37);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "PLAYFAIR CIPHER";
-            // 
-            // txtInput
-            // 
+            
             this.txtInput.Location = new System.Drawing.Point(30, 100);
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(350, 100);
             this.txtInput.TabIndex = 1;
-            // 
-            // txtKey
-            // 
+            
             this.txtKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKey.Location = new System.Drawing.Point(35, 233);
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(230, 30);
             this.txtKey.TabIndex = 2;
-            // 
-            // txtOutput
-            // 
+            
             this.txtOutput.BackColor = System.Drawing.SystemColors.Info;
             this.txtOutput.Location = new System.Drawing.Point(400, 100);
             this.txtOutput.Multiline = true;
@@ -67,9 +59,7 @@
             this.txtOutput.ReadOnly = true;
             this.txtOutput.Size = new System.Drawing.Size(357, 100);
             this.txtOutput.TabIndex = 3;
-            // 
-            // btnEncrypt
-            // 
+            
             this.btnEncrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncrypt.Location = new System.Drawing.Point(412, 347);
             this.btnEncrypt.Name = "btnEncrypt";
@@ -77,9 +67,7 @@
             this.btnEncrypt.TabIndex = 4;
             this.btnEncrypt.Text = "Mã hóa";
             this.btnEncrypt.UseVisualStyleBackColor = true;
-            // 
-            // btnDecrypt
-            // 
+            
             this.btnDecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDecrypt.Location = new System.Drawing.Point(587, 347);
             this.btnDecrypt.Name = "btnDecrypt";
@@ -87,9 +75,7 @@
             this.btnDecrypt.TabIndex = 5;
             this.btnDecrypt.Text = "Giải mã";
             this.btnDecrypt.UseVisualStyleBackColor = true;
-            // 
-            // btnGenerateMatrix
-            // 
+            
             this.btnGenerateMatrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateMatrix.Location = new System.Drawing.Point(294, 223);
             this.btnGenerateMatrix.Name = "btnGenerateMatrix";
@@ -97,19 +83,15 @@
             this.btnGenerateMatrix.TabIndex = 6;
             this.btnGenerateMatrix.Text = "Tạo ma trận";
             this.btnGenerateMatrix.UseVisualStyleBackColor = true;
-            // 
-            // lblInput
-            // 
+            
             this.lblInput.AutoSize = true;
             this.lblInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInput.Location = new System.Drawing.Point(26, 67);
             this.lblInput.Name = "lblInput";
-            this.lblInput.Size = new System.Drawing.Size(151, 20);
+            this.lblInput.Size = new System.Drawing.Size(102, 20);
             this.lblInput.TabIndex = 7;
-            this.lblInput.Text = "Văn bản (Plaintext)";
-            // 
-            // lblKey
-            // 
+            this.lblInput.Text = "Văn bản gốc";
+            
             this.lblKey.AutoSize = true;
             this.lblKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKey.Location = new System.Drawing.Point(31, 210);
@@ -117,19 +99,15 @@
             this.lblKey.Size = new System.Drawing.Size(113, 20);
             this.lblKey.TabIndex = 8;
             this.lblKey.Text = "Từ khóa (Key)";
-            // 
-            // lblOutput
-            // 
+             
             this.lblOutput.AutoSize = true;
             this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutput.Location = new System.Drawing.Point(396, 67);
             this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(223, 20);
+            this.lblOutput.Size = new System.Drawing.Size(130, 20);
             this.lblOutput.TabIndex = 9;
-            this.lblOutput.Text = "Văn bản mã hóa (Ciphertext)";
-            // 
-            // lblMatrix
-            // 
+            this.lblOutput.Text = "Văn bản mã hóa";
+            
             this.lblMatrix.AutoSize = true;
             this.lblMatrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatrix.Location = new System.Drawing.Point(30, 270);
@@ -137,27 +115,21 @@
             this.lblMatrix.Size = new System.Drawing.Size(163, 25);
             this.lblMatrix.TabIndex = 10;
             this.lblMatrix.Text = "Ma trận khóa 5x5";
-            // 
-            // panelMatrix
-            // 
+            
             this.panelMatrix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMatrix.Location = new System.Drawing.Point(30, 307);
             this.panelMatrix.Name = "panelMatrix";
             this.panelMatrix.Size = new System.Drawing.Size(350, 200);
             this.panelMatrix.TabIndex = 11;
-            // 
-            // btn_BackMain
-            // 
+            
             this.btn_BackMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_BackMain.Location = new System.Drawing.Point(501, 446);
+            this.btn_BackMain.Location = new System.Drawing.Point(495, 435);
             this.btn_BackMain.Name = "btn_BackMain";
             this.btn_BackMain.Size = new System.Drawing.Size(174, 43);
             this.btn_BackMain.TabIndex = 12;
             this.btn_BackMain.Text = "Quay lại";
             this.btn_BackMain.UseVisualStyleBackColor = true;
-            // 
-            // PlayFair
-            // 
+            
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 530);

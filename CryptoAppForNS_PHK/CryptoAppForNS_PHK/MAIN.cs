@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing.Drawing2D;
 namespace CryptoAppForNS_PHK
 {
     public partial class MAIN : Form
@@ -19,7 +19,13 @@ namespace CryptoAppForNS_PHK
 
         private void MAIN_Load(object sender, EventArgs e)
         {
-
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(0, 0, btn_Quit.Width, btn_Quit.Height);
+            btn_Quit.Region = new Region(gp);
+            gp.AddEllipse(0, 0, btn_RSA.Width, btn_RSA.Height);
+            btn_RSA.Region = new Region(gp);
+            gp.AddEllipse(0, 0, btn_PlayFair.Width, btn_PlayFair.Height);
+            btn_PlayFair.Region = new Region(gp);
         }
 
         private void btn_PlayFair_Click(object sender, EventArgs e)

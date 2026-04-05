@@ -58,7 +58,7 @@
             // btn_RSA
             // 
             this.btn_RSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RSA.Location = new System.Drawing.Point(571, 184);
+            this.btn_RSA.Location = new System.Drawing.Point(563, 184);
             this.btn_RSA.Name = "btn_RSA";
             this.btn_RSA.Size = new System.Drawing.Size(198, 112);
             this.btn_RSA.TabIndex = 2;
@@ -69,9 +69,9 @@
             // btn_Quit
             // 
             this.btn_Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quit.Location = new System.Drawing.Point(285, 391);
+            this.btn_Quit.Location = new System.Drawing.Point(303, 379);
             this.btn_Quit.Name = "btn_Quit";
-            this.btn_Quit.Size = new System.Drawing.Size(369, 49);
+            this.btn_Quit.Size = new System.Drawing.Size(299, 49);
             this.btn_Quit.TabIndex = 3;
             this.btn_Quit.Text = "Thoát";
             this.btn_Quit.UseVisualStyleBackColor = true;
