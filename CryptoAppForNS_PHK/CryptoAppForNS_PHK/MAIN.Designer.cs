@@ -30,15 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btn_PlayFair = new System.Windows.Forms.Button();
-            this.btn_RSA = new System.Windows.Forms.Button();
             this.btn_Quit = new System.Windows.Forms.Button();
+            this.btn_RSA = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(237, 52);
+            this.label1.Location = new System.Drawing.Point(234, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(453, 36);
             this.label1.TabIndex = 0;
@@ -55,27 +55,27 @@
             this.btn_PlayFair.UseVisualStyleBackColor = true;
             this.btn_PlayFair.Click += new System.EventHandler(this.btn_PlayFair_Click);
             // 
-            // btn_RSA
-            // 
-            this.btn_RSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RSA.Location = new System.Drawing.Point(563, 184);
-            this.btn_RSA.Name = "btn_RSA";
-            this.btn_RSA.Size = new System.Drawing.Size(198, 112);
-            this.btn_RSA.TabIndex = 2;
-            this.btn_RSA.Text = "RSA";
-            this.btn_RSA.UseVisualStyleBackColor = true;
-            this.btn_RSA.Click += new System.EventHandler(this.btn_RSA_Click);
-            // 
             // btn_Quit
             // 
             this.btn_Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quit.Location = new System.Drawing.Point(303, 379);
+            this.btn_Quit.Location = new System.Drawing.Point(312, 395);
             this.btn_Quit.Name = "btn_Quit";
             this.btn_Quit.Size = new System.Drawing.Size(299, 49);
             this.btn_Quit.TabIndex = 3;
             this.btn_Quit.Text = "Thoát";
             this.btn_Quit.UseVisualStyleBackColor = true;
             this.btn_Quit.Click += new System.EventHandler(this.btn_Quit_Click);
+            // 
+            // btn_RSA
+            // 
+            this.btn_RSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RSA.Location = new System.Drawing.Point(570, 184);
+            this.btn_RSA.Name = "btn_RSA";
+            this.btn_RSA.Size = new System.Drawing.Size(198, 112);
+            this.btn_RSA.TabIndex = 2;
+            this.btn_RSA.Text = "RSA";
+            this.btn_RSA.UseVisualStyleBackColor = true;
+            this.btn_RSA.Click += new System.EventHandler(this.btn_RSA_Click);
             // 
             // MAIN
             // 

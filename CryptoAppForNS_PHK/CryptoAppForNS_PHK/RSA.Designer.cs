@@ -41,7 +41,9 @@
             this.grpKeyGen.SuspendLayout();
             this.grpDisplayKey.SuspendLayout();
             this.SuspendLayout();
-             
+            // 
+            // labelTitle
+            // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(326, 9);
@@ -49,7 +51,9 @@
             this.labelTitle.Size = new System.Drawing.Size(76, 37);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "RSA ";
-            
+            // 
+            // btn_BackMain
+            // 
             this.btn_BackMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BackMain.Location = new System.Drawing.Point(25, 391);
             this.btn_BackMain.Name = "btn_BackMain";
@@ -57,7 +61,9 @@
             this.btn_BackMain.TabIndex = 13;
             this.btn_BackMain.Text = " Quay lại";
             this.btn_BackMain.UseVisualStyleBackColor = true;
-            
+            // 
+            // grpKeyGen
+            // 
             this.grpKeyGen.Controls.Add(this.btnAutoKey);
             this.grpKeyGen.Controls.Add(this.txt_e);
             this.grpKeyGen.Controls.Add(this.txt_q);
@@ -72,50 +78,66 @@
             this.grpKeyGen.TabIndex = 14;
             this.grpKeyGen.TabStop = false;
             this.grpKeyGen.Text = "Bước 1: Quản lý khóa";
-            
-            this.btnAutoKey.Location = new System.Drawing.Point(100, 130);
+            // 
+            // btnAutoKey
+            // 
+            this.btnAutoKey.Location = new System.Drawing.Point(87, 128);
             this.btnAutoKey.Name = "btnAutoKey";
-            this.btnAutoKey.Size = new System.Drawing.Size(180, 30);
+            this.btnAutoKey.Size = new System.Drawing.Size(202, 32);
             this.btnAutoKey.TabIndex = 6;
             this.btnAutoKey.Text = "Tạo khóa tự động";
             this.btnAutoKey.UseVisualStyleBackColor = true;
-            
+            // 
+            // txt_e
+            // 
             this.txt_e.Location = new System.Drawing.Point(100, 95);
             this.txt_e.Name = "txt_e";
             this.txt_e.Size = new System.Drawing.Size(180, 27);
             this.txt_e.TabIndex = 5;
-            
+            // 
+            // txt_q
+            // 
             this.txt_q.Location = new System.Drawing.Point(100, 65);
             this.txt_q.Name = "txt_q";
             this.txt_q.Size = new System.Drawing.Size(180, 27);
             this.txt_q.TabIndex = 4;
-            
+            // 
+            // txt_p
+            // 
             this.txt_p.Location = new System.Drawing.Point(100, 35);
             this.txt_p.Name = "txt_p";
             this.txt_p.Size = new System.Drawing.Size(180, 27);
             this.txt_p.TabIndex = 3;
-             
+            // 
+            // lbl_e
+            // 
             this.lbl_e.AutoSize = true;
             this.lbl_e.Location = new System.Drawing.Point(15, 98);
             this.lbl_e.Name = "lbl_e";
             this.lbl_e.Size = new System.Drawing.Size(76, 20);
             this.lbl_e.TabIndex = 2;
             this.lbl_e.Text = "Chỉ số e:";
-            
+            // 
+            // lbl_q
+            // 
             this.lbl_q.AutoSize = true;
             this.lbl_q.Location = new System.Drawing.Point(15, 68);
             this.lbl_q.Name = "lbl_q";
             this.lbl_q.Size = new System.Drawing.Size(67, 20);
             this.lbl_q.TabIndex = 1;
             this.lbl_q.Text = "Nhập q:";
-            
+            // 
+            // lbl_p
+            // 
             this.lbl_p.AutoSize = true;
             this.lbl_p.Location = new System.Drawing.Point(15, 38);
             this.lbl_p.Name = "lbl_p";
             this.lbl_p.Size = new System.Drawing.Size(67, 20);
             this.lbl_p.TabIndex = 0;
             this.lbl_p.Text = "Nhập p:";
-            
+            // 
+            // grpDisplayKey
+            // 
             this.grpDisplayKey.Controls.Add(this.txt_d);
             this.grpDisplayKey.Controls.Add(this.txt_n);
             this.grpDisplayKey.Controls.Add(this.lbl_d);
@@ -127,41 +149,53 @@
             this.grpDisplayKey.TabIndex = 15;
             this.grpDisplayKey.TabStop = false;
             this.grpDisplayKey.Text = "Bước 2: Hiển thị khóa (n, d)";
-            
+            // 
+            // txt_d
+            // 
             this.txt_d.BackColor = System.Drawing.SystemColors.Window;
             this.txt_d.Location = new System.Drawing.Point(100, 65);
             this.txt_d.Name = "txt_d";
             this.txt_d.ReadOnly = true;
             this.txt_d.Size = new System.Drawing.Size(180, 27);
             this.txt_d.TabIndex = 5;
-            
+            // 
+            // txt_n
+            // 
             this.txt_n.BackColor = System.Drawing.SystemColors.Window;
             this.txt_n.Location = new System.Drawing.Point(100, 35);
             this.txt_n.Name = "txt_n";
             this.txt_n.ReadOnly = true;
             this.txt_n.Size = new System.Drawing.Size(180, 27);
             this.txt_n.TabIndex = 4;
-            
+            // 
+            // lbl_d
+            // 
             this.lbl_d.AutoSize = true;
             this.lbl_d.Location = new System.Drawing.Point(15, 68);
             this.lbl_d.Name = "lbl_d";
             this.lbl_d.Size = new System.Drawing.Size(66, 20);
             this.lbl_d.TabIndex = 2;
             this.lbl_d.Text = "Khóa d:";
-            
+            // 
+            // lbl_n
+            // 
             this.lbl_n.AutoSize = true;
             this.lbl_n.Location = new System.Drawing.Point(15, 38);
             this.lbl_n.Name = "lbl_n";
             this.lbl_n.Size = new System.Drawing.Size(66, 20);
             this.lbl_n.TabIndex = 0;
             this.lbl_n.Text = "Khóa n:";
-            
+            // 
+            // txtInputText
+            // 
             this.txtInputText.Location = new System.Drawing.Point(370, 90);
             this.txtInputText.Multiline = true;
             this.txtInputText.Name = "txtInputText";
             this.txtInputText.Size = new System.Drawing.Size(380, 120);
             this.txtInputText.TabIndex = 16;
-            
+            // 
+            // txtOutputText
+            // 
             this.txtOutputText.BackColor = System.Drawing.SystemColors.Info;
             this.txtOutputText.Location = new System.Drawing.Point(370, 250);
             this.txtOutputText.Multiline = true;
@@ -169,21 +203,29 @@
             this.txtOutputText.ReadOnly = true;
             this.txtOutputText.Size = new System.Drawing.Size(380, 120);
             this.txtOutputText.TabIndex = 17;
-            
+            // 
+            // btnEncrypt
+            // 
+            this.btnEncrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncrypt.Location = new System.Drawing.Point(374, 384);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(169, 63);
             this.btnEncrypt.TabIndex = 18;
             this.btnEncrypt.Text = "Mã hóa (M^e mod n)";
             this.btnEncrypt.UseVisualStyleBackColor = true;
-            
+            // 
+            // btnDecrypt
+            // 
+            this.btnDecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDecrypt.Location = new System.Drawing.Point(581, 384);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(169, 63);
             this.btnDecrypt.TabIndex = 19;
             this.btnDecrypt.Text = "Giải mã (C^d mod n)";
             this.btnDecrypt.UseVisualStyleBackColor = true;
-            
+            // 
+            // lblInputText
+            // 
             this.lblInputText.AutoSize = true;
             this.lblInputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInputText.Location = new System.Drawing.Point(370, 67);
@@ -191,7 +233,9 @@
             this.lblInputText.Size = new System.Drawing.Size(107, 20);
             this.lblInputText.TabIndex = 20;
             this.lblInputText.Text = "Văn bản gốc ";
-            
+            // 
+            // lblOutputText
+            // 
             this.lblOutputText.AutoSize = true;
             this.lblOutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutputText.Location = new System.Drawing.Point(370, 227);
@@ -199,7 +243,9 @@
             this.lblOutputText.Size = new System.Drawing.Size(130, 20);
             this.lblOutputText.TabIndex = 21;
             this.lblOutputText.Text = "Văn bản mã hóa";
-            
+            // 
+            // RSA
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 460);
