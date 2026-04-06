@@ -38,6 +38,7 @@
             this.btnDecrypt = new System.Windows.Forms.Button();
             this.lblInputText = new System.Windows.Forms.Label();
             this.lblOutputText = new System.Windows.Forms.Label();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.grpKeyGen.SuspendLayout();
             this.grpDisplayKey.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             this.grpKeyGen.Size = new System.Drawing.Size(320, 180);
             this.grpKeyGen.TabIndex = 14;
             this.grpKeyGen.TabStop = false;
-            this.grpKeyGen.Text = "Bước 1: Quản lý khóa";
+            this.grpKeyGen.Text = "Quản lý khóa";
             // 
             // btnAutoKey
             // 
@@ -150,13 +151,14 @@
             this.grpDisplayKey.Size = new System.Drawing.Size(320, 110);
             this.grpDisplayKey.TabIndex = 15;
             this.grpDisplayKey.TabStop = false;
-            this.grpDisplayKey.Text = "Bước 2: Hiển thị khóa (n, d)";
+            this.grpDisplayKey.Text = "Hiển thị khóa (n, d)";
             // 
             // txt_d
             // 
             this.txt_d.BackColor = System.Drawing.SystemColors.Window;
             this.txt_d.Location = new System.Drawing.Point(100, 65);
             this.txt_d.Name = "txt_d";
+            this.txt_d.ReadOnly = true;
             this.txt_d.Size = new System.Drawing.Size(180, 27);
             this.txt_d.TabIndex = 5;
             // 
@@ -165,6 +167,7 @@
             this.txt_n.BackColor = System.Drawing.SystemColors.Window;
             this.txt_n.Location = new System.Drawing.Point(100, 35);
             this.txt_n.Name = "txt_n";
+            this.txt_n.ReadOnly = true;
             this.txt_n.Size = new System.Drawing.Size(180, 27);
             this.txt_n.TabIndex = 4;
             // 
@@ -232,9 +235,9 @@
             this.lblInputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInputText.Location = new System.Drawing.Point(370, 67);
             this.lblInputText.Name = "lblInputText";
-            this.lblInputText.Size = new System.Drawing.Size(107, 20);
+            this.lblInputText.Size = new System.Drawing.Size(171, 20);
             this.lblInputText.TabIndex = 20;
-            this.lblInputText.Text = "Văn bản gốc ";
+            this.lblInputText.Text = "Văn bản gốc | mã hóa";
             // 
             // lblOutputText
             // 
@@ -242,15 +245,27 @@
             this.lblOutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutputText.Location = new System.Drawing.Point(370, 227);
             this.lblOutputText.Name = "lblOutputText";
-            this.lblOutputText.Size = new System.Drawing.Size(135, 20);
+            this.lblOutputText.Size = new System.Drawing.Size(171, 20);
             this.lblOutputText.TabIndex = 21;
-            this.lblOutputText.Text = "Văn bản mã hóa ";
+            this.lblOutputText.Text = "Văn bản mã hóa | gốc";
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.Location = new System.Drawing.Point(567, 23);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(183, 46);
+            this.btn_Delete.TabIndex = 22;
+            this.btn_Delete.Text = "Xóa văn bản";
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // RSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 460);
+            this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.lblOutputText);
             this.Controls.Add(this.lblInputText);
             this.Controls.Add(this.btnDecrypt);
@@ -296,5 +311,6 @@
         private System.Windows.Forms.Button btnDecrypt;
         private System.Windows.Forms.Label lblInputText;
         private System.Windows.Forms.Label lblOutputText;
+        private System.Windows.Forms.Button btn_Delete;
     }
 }

@@ -75,6 +75,7 @@ namespace CryptoAppForNS_PHK
         }
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
+            TinhToanKhoa();
             try
             {
                 BigInteger n = BigInteger.Parse(txt_n.Text);
@@ -97,6 +98,7 @@ namespace CryptoAppForNS_PHK
 
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
+            TinhToanKhoa();
             try
             {
                 BigInteger n = BigInteger.Parse(txt_n.Text);
@@ -116,6 +118,10 @@ namespace CryptoAppForNS_PHK
             catch { MessageBox.Show("Lỗi giải mã! Kiểm tra lại bản mã đầu vào."); }
         }
 
-        
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            txtInputText.Text = string.Empty;
+            txtOutputText.Text = string.Empty;
+        }
     }
 }
