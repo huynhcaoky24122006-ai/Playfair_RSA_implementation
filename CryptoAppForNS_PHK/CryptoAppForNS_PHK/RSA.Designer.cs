@@ -61,6 +61,7 @@
             this.btn_BackMain.TabIndex = 13;
             this.btn_BackMain.Text = " Quay lại";
             this.btn_BackMain.UseVisualStyleBackColor = true;
+            this.btn_BackMain.Click += new System.EventHandler(this.btn_BackMain_Click);
             // 
             // grpKeyGen
             // 
@@ -87,6 +88,7 @@
             this.btnAutoKey.TabIndex = 6;
             this.btnAutoKey.Text = "Tạo khóa tự động";
             this.btnAutoKey.UseVisualStyleBackColor = true;
+            this.btnAutoKey.Click += new System.EventHandler(this.btnAutoKey_Click);
             // 
             // txt_e
             // 
@@ -155,7 +157,6 @@
             this.txt_d.BackColor = System.Drawing.SystemColors.Window;
             this.txt_d.Location = new System.Drawing.Point(100, 65);
             this.txt_d.Name = "txt_d";
-            this.txt_d.ReadOnly = true;
             this.txt_d.Size = new System.Drawing.Size(180, 27);
             this.txt_d.TabIndex = 5;
             // 
@@ -164,7 +165,6 @@
             this.txt_n.BackColor = System.Drawing.SystemColors.Window;
             this.txt_n.Location = new System.Drawing.Point(100, 35);
             this.txt_n.Name = "txt_n";
-            this.txt_n.ReadOnly = true;
             this.txt_n.Size = new System.Drawing.Size(180, 27);
             this.txt_n.TabIndex = 4;
             // 
@@ -213,6 +213,7 @@
             this.btnEncrypt.TabIndex = 18;
             this.btnEncrypt.Text = "Mã hóa (M^e mod n)";
             this.btnEncrypt.UseVisualStyleBackColor = true;
+            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
             // btnDecrypt
             // 
@@ -223,6 +224,7 @@
             this.btnDecrypt.TabIndex = 19;
             this.btnDecrypt.Text = "Giải mã (C^d mod n)";
             this.btnDecrypt.UseVisualStyleBackColor = true;
+            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
             // 
             // lblInputText
             // 
@@ -240,9 +242,9 @@
             this.lblOutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutputText.Location = new System.Drawing.Point(370, 227);
             this.lblOutputText.Name = "lblOutputText";
-            this.lblOutputText.Size = new System.Drawing.Size(130, 20);
+            this.lblOutputText.Size = new System.Drawing.Size(135, 20);
             this.lblOutputText.TabIndex = 21;
-            this.lblOutputText.Text = "Văn bản mã hóa";
+            this.lblOutputText.Text = "Văn bản mã hóa ";
             // 
             // RSA
             // 
