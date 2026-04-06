@@ -39,6 +39,7 @@
             this.lblInputText = new System.Windows.Forms.Label();
             this.lblOutputText = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.grpKeyGen.SuspendLayout();
             this.grpDisplayKey.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +48,7 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(326, 9);
+            this.labelTitle.Location = new System.Drawing.Point(328, 9);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(76, 37);
             this.labelTitle.TabIndex = 1;
@@ -260,11 +261,23 @@
             this.btn_Delete.UseVisualStyleBackColor = true;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.Location = new System.Drawing.Point(176, 387);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(138, 50);
+            this.btn_Refresh.TabIndex = 23;
+            this.btn_Refresh.Text = "Làm mới khóa";
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // RSA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 460);
+            this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.lblOutputText);
             this.Controls.Add(this.lblInputText);
@@ -312,5 +325,6 @@
         private System.Windows.Forms.Label lblInputText;
         private System.Windows.Forms.Label lblOutputText;
         private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_Refresh;
     }
 }

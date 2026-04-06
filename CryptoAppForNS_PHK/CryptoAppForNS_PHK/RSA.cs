@@ -123,5 +123,15 @@ namespace CryptoAppForNS_PHK
             txtInputText.Text = string.Empty;
             txtOutputText.Text = string.Empty;
         }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            txt_p.Text = string.Empty;
+            txt_q.Text = string.Empty;
+            txt_e.Text = string.Empty;
+            txt_n.Text = string.Empty;
+            txt_d.Text = string.Empty;
+
+        }
     }
 }
