@@ -28,8 +28,8 @@
             this.lblKey = new System.Windows.Forms.Label();
             this.lblOutput = new System.Windows.Forms.Label();
             this.lblMatrix = new System.Windows.Forms.Label();
-            this.panelMatrix = new System.Windows.Forms.Panel();
             this.btn_BackMain = new System.Windows.Forms.Button();
+            this.txtMatrixDisplay = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -138,14 +138,6 @@
             this.lblMatrix.TabIndex = 10;
             this.lblMatrix.Text = "Ma trận khóa 5x5";
             // 
-            // panelMatrix
-            // 
-            this.panelMatrix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMatrix.Location = new System.Drawing.Point(30, 307);
-            this.panelMatrix.Name = "panelMatrix";
-            this.panelMatrix.Size = new System.Drawing.Size(350, 200);
-            this.panelMatrix.TabIndex = 11;
-            // 
             // btn_BackMain
             // 
             this.btn_BackMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,13 +148,22 @@
             this.btn_BackMain.Text = "Quay lại";
             this.btn_BackMain.UseVisualStyleBackColor = true;
             // 
+            // txtMatrixDisplay
+            // 
+            this.txtMatrixDisplay.Font = new System.Drawing.Font("Courier New", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatrixDisplay.Location = new System.Drawing.Point(30, 307);
+            this.txtMatrixDisplay.Name = "txtMatrixDisplay";
+            this.txtMatrixDisplay.Size = new System.Drawing.Size(333, 180);
+            this.txtMatrixDisplay.TabIndex = 13;
+            this.txtMatrixDisplay.Text = "";
+            // 
             // PlayFair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 530);
+            this.Controls.Add(this.txtMatrixDisplay);
             this.Controls.Add(this.btn_BackMain);
-            this.Controls.Add(this.panelMatrix);
             this.Controls.Add(this.lblMatrix);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.lblKey);
@@ -195,7 +196,7 @@
         private System.Windows.Forms.Label lblKey;
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Label lblMatrix;
-        private System.Windows.Forms.Panel panelMatrix;
         private System.Windows.Forms.Button btn_BackMain;
+        private System.Windows.Forms.RichTextBox txtMatrixDisplay;
     }
 }
