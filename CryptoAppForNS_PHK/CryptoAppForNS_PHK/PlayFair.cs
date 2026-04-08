@@ -155,6 +155,16 @@ namespace CryptoAppForNS_PHK
             txtMatrixDisplay.Text = sb.ToString();
         }
 
+        private void btn_DeleteMatrix_Click(object sender, EventArgs e)
+        {
+            txtKey.Text = String.Empty;
+            txtMatrixDisplay.Text = String.Empty;
+        }
 
+        private void btn_DeleteText_Click(object sender, EventArgs e)
+        {
+            txtInput.Text = String.Empty;
+            txtOutput.Text = String.Empty;
+        }
     }
 }
