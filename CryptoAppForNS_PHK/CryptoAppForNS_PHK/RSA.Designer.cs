@@ -192,6 +192,7 @@
             // 
             // txtInputText
             // 
+            this.txtInputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInputText.Location = new System.Drawing.Point(370, 90);
             this.txtInputText.Multiline = true;
             this.txtInputText.Name = "txtInputText";
@@ -201,6 +202,7 @@
             // txtOutputText
             // 
             this.txtOutputText.BackColor = System.Drawing.SystemColors.Info;
+            this.txtOutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOutputText.Location = new System.Drawing.Point(370, 250);
             this.txtOutputText.Multiline = true;
             this.txtOutputText.Name = "txtOutputText";
@@ -210,23 +212,23 @@
             // 
             // btnEncrypt
             // 
-            this.btnEncrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEncrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEncrypt.Location = new System.Drawing.Point(374, 384);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(169, 63);
             this.btnEncrypt.TabIndex = 18;
-            this.btnEncrypt.Text = "Mã hóa (M^e mod n)";
+            this.btnEncrypt.Text = "Mã hóa\r\n (M^e mod n)";
             this.btnEncrypt.UseVisualStyleBackColor = true;
             this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
             // 
             // btnDecrypt
             // 
-            this.btnDecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDecrypt.Location = new System.Drawing.Point(581, 384);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(169, 63);
             this.btnDecrypt.TabIndex = 19;
-            this.btnDecrypt.Text = "Giải mã (C^d mod n)";
+            this.btnDecrypt.Text = "Giải mã \r\n(C^d mod n)";
             this.btnDecrypt.UseVisualStyleBackColor = true;
             this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
             // 
